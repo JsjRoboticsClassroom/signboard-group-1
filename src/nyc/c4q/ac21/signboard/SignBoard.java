@@ -104,6 +104,7 @@ public class SignBoard {
             terminal.setTextColor(AnsiTerminal.Color.GREEN);
         }
 
+
         /**
          * Selects yellow text.  Subsequent writes will be in yellow.
          */
@@ -128,6 +129,7 @@ public class SignBoard {
                 throw new IllegalArgumentException("y = " + y);
 
             terminal.moveTo(y + yOffset, x + xOffset);
+            //this.setMagenta();
             terminal.write(text);
         }
 
